@@ -1,0 +1,33 @@
+{% extends "web/temp.html" %}
+{% block face %}
+<style>
+    body {
+        background-color: black;
+    }
+    p {
+        -webkit-text-fill-color: white;
+    }
+    h1 {
+        -webkit-text-fill-color: white;
+    }
+    .container img {
+    height: 70%;
+    width: 40%;
+    display: block;
+    margin: auto;
+    }
+
+</style>
+{% endblock %}
+
+{% load static %}
+
+{% block content %}
+    <br>
+    <h1><strong>VICTORY!</strong></h1>
+
+    <p>Congratulations, Your little white lie <strong>"{{ Lie }}"</strong> has taken over the world!</p>
+    <div class="container">
+        <img src={% static "misinformed.jpg" %}>
+    </div>
+{% endblock %}

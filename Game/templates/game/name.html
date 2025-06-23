@@ -1,0 +1,19 @@
+{% extends "web/temp.html" %}
+
+{% block content %}
+    <br>
+    <h1><strong>TELL US...</strong></h1>
+    <h4>WHAT IS YOUR LITTLE LIE?</h4>
+
+    <p>Tip: get <strong>Reputation</strong> to 100% to win.</p>
+
+    <div class="form-container">
+        <form action="#" method="post">
+            <label for="your_name">Your little white lie: </label><br>
+            <input id="your_name" type="text" name="your_name" maxlength="1000" required><br>
+            {{ form }}
+            {% csrf_token %}
+            <input type="submit" value="BEGIN">
+        </form>
+    </div>
+{% endblock %}

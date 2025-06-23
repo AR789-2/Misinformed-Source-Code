@@ -1,0 +1,21 @@
+{% extends "game\temp.html" %}
+
+
+{% block content %}
+    <div class="UPG">
+        <br>
+        <h2>UPGRADES</h2>
+        <p>Use your FIB Points to Purchase Upgrades to help spread your lie.</p>
+        <h6 id="Money">FIB: {{ Cash }}</h6>
+        <h7 id="Stats">ACTIVITY: {{ ACT }} <br> BELIEVABILITY: {{ BEL }} <br> SEVERITY: {{ SEV }} <br></h7>
+        {% for upg in Upgrades.items %}
+            {% if upg.1 == "BOUGHT"%}
+            <a class="bought">- {{upg.0}} | 0 FIB -</a><br>
+            {% else %}
+            <a href="{{upg.0}}" class="upg" title="{{upg.1.2}}">- {{upg.0}} | {{upg.1.1}} FIB -</a><br>
+            {% endif %}
+        {% endfor %}
+        <br>
+        <p>Note: Your Game is currently Paused, return to the Main page to resume.</p>
+    </div>
+{% endblock %}

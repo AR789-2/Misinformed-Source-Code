@@ -1,0 +1,24 @@
+{% extends "web/temp.html" %}
+{% block face %}
+<style>
+    .container img {
+    height: 70%;
+    width: 40%;
+    display: block;
+    margin: auto;
+    }
+
+</style>
+{% endblock %}
+
+{% load static %}
+
+{% block content %}
+    <br>
+    <h1><strong>DEFEAT!</strong></h1>
+
+    <p>Your little white lie <strong>"{{ Lie }}"</strong> has been disproven by the Organisation.</p>
+    <div class="container">
+        <img src={% static "fact.png" %}>
+    </div>
+{% endblock %}

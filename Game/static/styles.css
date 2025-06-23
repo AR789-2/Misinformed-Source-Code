@@ -1,0 +1,79 @@
+h1 {
+    text-align: center;
+}
+h4 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    -webkit-text-fill-color: blue;
+}
+h5 {
+    text-align: center;
+    -webkit-text-fill-color: blue;
+}
+h6 {
+    text-align: center;
+    -webkit-text-fill-color: lime;
+    background-color: black;
+    outline-style: auto;
+    outline-width: 3px;
+    outline-color: lime;
+    width: 200px;
+    justify-self: center;
+}
+h7 {
+    text-align: center;
+    -webkit-text-fill-color: rgb(0, 183, 255);
+    background-color: black;
+    outline-style: auto;
+    outline-width: 3px;
+    outline-color: rgb(0, 183, 255);
+    width: 350px;
+    justify-self: center;
+}
+
+div.UPG {
+    align-items: center;
+    text-align: center;
+}
+
+a.bought {
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+    -webkit-text-fill-color: rgb(0, 83, 0);
+    background-color: black;
+    outline-style: auto;
+    outline-width: 3px;
+    outline-color: rgb(0, 83, 0);
+    justify-self: center;
+    text-decoration: none;
+    align-self: center;
+}
+
+a.upg {
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+    -webkit-text-fill-color: lime;
+    background-color: black;
+    outline-style: auto;
+    outline-width: 3px;
+    outline-color: lime;
+    justify-self: center;
+    text-decoration: none;
+    align-self: center;
+}
+
+p {
+    text-align: center;
+}
+@font-face {
+    font-family: digital;
+    src: url(DigitalDisco.ttf);
+  }
+
+body {
+    font-family: digital;
+}

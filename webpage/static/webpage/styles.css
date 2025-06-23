@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+}
+h4 {
+    text-align: center;
+}
+h5 {
+    text-align: center;
+    -webkit-text-fill-color: blue;
+}
+
+div.form-container {
+    justify-self: center;
+    justify-items: center;
+    width: 20%;
+}
+
+p {
+    text-align: center;
+}
+@font-face {
+    font-family: digital;
+    src: url(DigitalDisco.ttf);
+  }
+
+body {
+    font-family: digital;
+}
